@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel='icon' href='file:///D:/%23CLONE%20-%20D%20DRIVE/NOTEPAD++/HTML%20(BCA%202nd%20YEAR)/spotify logo 1.png'/>
+    <title>SPOTIFY | LOGIN</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: url('file:///D:/%23CLONE%20-%20D%20DRIVE/NOTEPAD++/HTML%20(BCA%202nd%20YEAR)/SPOTIFY%20bg.jfif') center/cover;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .navbar {
+            display: flex;
+            background-color: black;
+            color: blanchedalmond;
+            width: 100%;
+            padding: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        }
+
+        .navbar-logo {
+            flex: 60%;
+            margin-left: 20px;
+        }
+
+        .navbar-logo img {
+            width: 200px;
+            height: 55px;
+        }
+
+        .navbar-links {
+            flex: 40%;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            line-height: 60px;
+        }
+
+        .navbar-links a {
+            color: blanchedalmond;
+            text-decoration: none;
+            margin: 0 15px;
+        }
+
+        .login-container {
+            background-color: rgba(34, 153, 84, 0.8);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+            width: 300px;
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        label {
+            display: block;
+            margin: 10px 0;
+            color: #fff;
+        }
+
+        input {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            box-sizing: border-box;
+            border-radius: 5px;
+            border: 1px solid #27ae60;
+        }
+
+        button {
+            background-color: #27ae60;
+            color: #fff;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #229954;
+        }
+        .footer {
+            display: flex;
+            background-color: black;
+            padding: 20px;
+            justify-content: center;
+            align-items: center;
+            color: blanchedalmond;
+            width: 100%;
+            position: fixed;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+
+<div class="navbar">
+    <div class="navbar-logo">
+        <a href=""><img src="file:///D:/%23CLONE%20-%20D%20DRIVE/NOTEPAD++/HTML%20(BCA%202nd%20YEAR)/SPOTIFY OFF1.png" alt="Logo"></a>
+    </div>
+    <div class="navbar-links">
+        <a href="">Premium</a>
+        <a href="">Support</a>
+        <a href="">Download</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="" onclick="error()">Sign up</a>
+    </div>
+</div>
+
+<div class="login-container">
+    <h2 style="color: #fff;">Login</h2>
+    <form>
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+
+        <button type="submit" onclick="login()">Login</button>
+    </form>
+</div>
+
+<script>
+     function login() {
+        alert("Something went wrong!\nPlease try later.");
+    }
+
+    function error() {
+        alert("ERROR OCCURED WHILE SIGNUP \n SEE YOU NEXT TIME :)");
+        }
+</script>
+<div class="footer">
+    <!-- Add content or links for the footer as needed -->
+    <p>THIS PAGE IS CREATED BY NIJO NINAN.</p>
+</div>
+<!--<div style="display: flex; justify-content: center;">THIS PAGE IS CREATED BY NIJO NINAN.</div>-->
+</body>
+</html>
